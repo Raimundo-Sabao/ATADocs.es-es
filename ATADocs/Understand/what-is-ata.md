@@ -69,7 +69,7 @@ Para poder detectar las credenciales en peligro, ATA hace uso tanto de análisis
 
 Con los análisis de comportamiento y el aprendizaje automático, ATA es capaz de detectar actividades sospechosas como inicios de sesión anómalos, accesos irregulares a recursos y horas de trabajo no habituales que apuntarían a que las credenciales están en peligro.
 Para protegerse frente a las credenciales en peligro, ATA detecta las siguientes técnicas y ataques malintencionados conocidos:
-:
+
 
  - **Fuerza bruta** <br>En los ataques por fuerza bruta, los atacantes intentan adivinar las credenciales de usuario al emparejar varios nombres de usuario con diversos intentos de contraseña. Muchas veces, los atacantes usan diccionarios o algoritmos de gran complejidad para probar con cuantos valores el sistema les permita.
 
