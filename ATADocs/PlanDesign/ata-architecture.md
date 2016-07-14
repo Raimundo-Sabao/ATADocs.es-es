@@ -96,7 +96,7 @@ Tenga en cuenta lo siguiente al decidir cuántos centros ATA necesita implementa
 
 -   Un centro ATA puede supervisar un solo bosque de Active Directory. Si tiene más de un bosque de Active Directory, necesitará como mínimo un centro ATA por cada bosque de Active Directory.
 
--    En una implementación de Active Directory muy grande, es posible que un solo Centro ATA no sea capaz de administrar el tráfico de todos los controladores de dominio. En este caso, se necesitarán varios Centros ATA. El número de Centros ATA debe determinarse según el [Planeación de la capacidad de ATA](ata-capacity-planning.md)..
+-    En una implementación de Active Directory muy grande, es posible que un solo Centro ATA no sea capaz de administrar el tráfico de todos los controladores de dominio. En este caso, se necesitarán varios Centros ATA. El número de Centros ATA debe determinarse según el [Planeación de la capacidad de ATA](ata-capacity-planning.md).
 
 ## Puerta de enlace de ATA y puerta de enlace ligera de ATA
 
@@ -173,7 +173,7 @@ Los controladores de dominio y las puertas de enlace de ATA pueden ser físicos 
 ### Eventos
 Para mejorar la detección de ATA de ataques pass-the-hash, por fuerza bruta y de Honey Token, ATA necesita el id. 4776 del registro de eventos de Windows. Esto se puede reenviar a la puerta de enlace de ATA de dos maneras diferentes: configurando la puerta de enlace de ATA para que escuche eventos de SIEM o mediante el reenvío de eventos de Windows.
 
--   Configurar la puerta de enlace de ATA para que escuche eventos de SIEM <br>Configure el SIEM para que reenvíe eventos de Windows específicos a ATA. ATA admite diversos proveedores de SIEM. Para obtener más información, vea [Configurar la recopilación de eventos](/advanced-threat-analytics/deploy-use/configure-event-collection)..
+-   Configurar la puerta de enlace de ATA para que escuche eventos de SIEM <br>Configure el SIEM para que reenvíe eventos de Windows específicos a ATA. ATA admite diversos proveedores de SIEM. Para obtener más información, vea [Configurar la recopilación de eventos](/advanced-threat-analytics/deploy-use/configure-event-collection).
 
 -   Configurar el reenvío de eventos de Windows<br>Otra forma de que ATA obtenga eventos consiste en configurar los controladores de dominio de manera que reenvíen el evento de Windows 4776 a la puerta de enlace de ATA. Esto es especialmente útil si no hay un SIEM o si el SIEM no es compatible actualmente con ATA. Para obtener más información sobre el reenvío de eventos de Windows en ATA, vea [Configurar el reenvío de eventos de Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding).
 
