@@ -28,7 +28,7 @@ ms.suite: ems
 # Solución de problemas del registro de errores de ATA
 En esta sección se detallan los posibles errores en las implementaciones de ATA y los pasos necesarios para solucionarlos.
 ## Errores de la puerta de enlace de ATA
-|Error de :|Descripción|Solución|
+|Error de:|Descripción|Solución|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException: Error local|La puerta de enlace de ATA no pudo autenticarse en el controlador de dominio.|1. Confirme que el registro DNS del controlador de dominio está configurado correctamente en el servidor DNS. <br>2. Compruebe que la hora de la puerta de enlace de ATA está sincronizada con la del controlador de dominio.|
 |System.IdentityModel.Tokens.SecurityTokenValidationException: No se pudo validar la cadena de certificados|La puerta de enlace de ATA no pudo validar el certificado del centro ATA.|1. Compruebe que el certificado de CA raíz está instalado en el almacén de certificados de la entidad de certificación de confianza en la puerta de enlace de ATA. <br>2. Compruebe que la lista de revocación de certificados (CRL) está disponible y que se puede realizar la validación de la revocación de certificados.|
@@ -43,12 +43,12 @@ En esta sección se detallan los posibles errores en las implementaciones de ATA
 |Error de instalación: 0x80070652|Hay otras instalaciones pendientes en el equipo.|Espere a que las demás instalaciones finalicen y, si es necesario, reinicie el equipo.|
 
 ## Errores de la consola de ATA
-|Error de :|Descripción|Solución|
+|Error de:|Descripción|Solución|
 |-------------|----------|---------|
 |Error HTTP 500.19: Error interno del servidor|El módulo URL Rewrite para IIS no se pudo instalar correctamente.|Desinstale y vuelva a instalar el módulo URL Rewrite para IIS.<br>[Descargue el módulo URL Rewrite para IIS](http://go.microsoft.com/fwlink/?LinkID=615137)|
 
 ## Errores de implementación
-|Error de :|Descripción|Solución|
+|Error de:|Descripción|Solución|
 |-------------|----------|---------|
 |Se produce un error en la instalación de .Net Framework 4.6.1 con identificador 0x800713ec|Los requisitos previos para .Net Framework 4.6.1 no están instalados en el servidor. |Antes de instalar ATA, compruebe que las actualizaciones de Windows [KB2919442](https://www.microsoft.com/en-us/download/details.aspx?id=42135) y [KB2919355](https://support.microsoft.com/en-us/kb/2919355) están instaladas en el servidor.|
 
