@@ -40,7 +40,7 @@ En estas notas de la versión encontrará información sobre los problemas conoc
 
 -   Mejoras en el rendimiento para dar cabida a más puertas de enlace de ATA por centro ATA.
 
--   Se agregó un nuevo proceso de resolución automática de nombres que relaciona los nombres de equipo con las direcciones IP: esta función única ahorrará un tiempo muy valioso en el proceso de investigación y proporcionará pruebas irrefutables a los analistas de seguridad
+-   Se agregó un nuevo proceso de resolución automática de nombres que relaciona los nombres de equipo con las direcciones IP: esta función única ahorrará un tiempo muy valioso en el proceso de investigación y proporcionará pruebas irrefutables a los analistas de seguridad.
 
 -   Capacidad mejorada para recopilar información de los usuarios y ajustar automáticamente el proceso de detección.
 
